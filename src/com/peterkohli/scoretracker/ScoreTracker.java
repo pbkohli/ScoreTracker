@@ -1,7 +1,5 @@
 package com.peterkohli.scoretracker;
 
-import com.peterkohli.scoretracker.Course;
-
 import java.sql.*;
 
 /**
@@ -63,7 +61,7 @@ public class ScoreTracker {
         }
 
         try {
-            course1.writeCourseToDB(conn);
+            course1.write(conn);
         } catch (SQLException e) {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
         }
@@ -78,7 +76,7 @@ public class ScoreTracker {
         System.out.println(course1.getHolePar(2));
 
         try {
-            course1.deleteFromDB(conn);
+            course1.delete(conn);
         } catch (SQLException e) {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
         }

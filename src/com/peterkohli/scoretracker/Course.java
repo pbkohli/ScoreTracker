@@ -9,7 +9,7 @@ import java.sql.*;
  * Time: 4:22 PM
  * To change this template use File | Settings | File Templates.
  */
-public class Course {
+public class Course implements DatabaseObject {
     private int[][] holes;
     private double slope;
     private double rating;
@@ -49,7 +49,7 @@ public class Course {
     }
 
     //method to write a course to sql db
-    public void writeCourseToDB(Connection conn)
+    public void write(Connection conn)
             throws SQLException {
 
         String courseQuery = "INSERT INTO dbo.Course ("
@@ -130,7 +130,7 @@ public class Course {
     }
 
     //Delete course and its corresponding holes from DB
-    public void deleteFromDB(Connection conn)
+    public void delete(Connection conn)
             throws SQLException {
         int courseID = 0;
 
