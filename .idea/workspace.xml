@@ -2,18 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b81bf1f-c9d0-4eae-b4f3-60db4c25fdd7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/peterkohli/scoretracker/DatabaseObject.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/peterkohli/scoretracker/Course.java" afterPath="$PROJECT_DIR$/src/com/peterkohli/scoretracker/Course.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/peterkohli/scoretracker/ScoreTracker.java" afterPath="$PROJECT_DIR$/src/com/peterkohli/scoretracker/ScoreTracker.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/peterkohli/scoretracker/DatabaseObject.java" afterPath="$PROJECT_DIR$/src/com/peterkohli/scoretracker/DatabaseObject.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/peterkohli/scoretracker/Golfer.java" afterPath="$PROJECT_DIR$/src/com/peterkohli/scoretracker/Golfer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/peterkohli/scoretracker/Score.java" afterPath="$PROJECT_DIR$/src/com/peterkohli/scoretracker/Score.java" />
     </list>
     <ignored path="ScoreTracker.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="5b81bf1f-c9d0-4eae-b4f3-60db4c25fdd7" time="1434119867593" ignored="false" />
     <file path="$USER_HOME$/OneDrive/Java Course/.idea/workspace.xml" changelist="5b81bf1f-c9d0-4eae-b4f3-60db4c25fdd7" time="1434120974032" ignored="false" />
-    <file path="/Course.java" changelist="5b81bf1f-c9d0-4eae-b4f3-60db4c25fdd7" time="1434137037083" ignored="false" />
+    <file path="/Course.java" changelist="5b81bf1f-c9d0-4eae-b4f3-60db4c25fdd7" time="1434137496120" ignored="false" />
     <file path="/ScoreTracker.java" changelist="5b81bf1f-c9d0-4eae-b4f3-60db4c25fdd7" time="1434137136471" ignored="false" />
     <file path="/DatabaseObject.java" changelist="5b81bf1f-c9d0-4eae-b4f3-60db4c25fdd7" time="1434137125498" ignored="false" />
+    <file path="/Golfer.java" changelist="5b81bf1f-c9d0-4eae-b4f3-60db4c25fdd7" time="1434137443313" ignored="false" />
+    <file path="/Score.java" changelist="5b81bf1f-c9d0-4eae-b4f3-60db4c25fdd7" time="1434137517556" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="5b81bf1f-c9d0-4eae-b4f3-60db4c25fdd7" time="1434137601250" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,10 +77,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ScoreTracker.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ScoreTracker.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/peterkohli/scoretracker/ScoreTracker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="58" selection-start="2188" selection-end="2188" vertical-scroll-proportion="2.1097121">
+            <state line="69" column="58" selection-start="2188" selection-end="2188" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -86,7 +89,7 @@
       <file leaf-file-name="DatabaseObject.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/peterkohli/scoretracker/DatabaseObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="31" selection-start="392" selection-end="392" vertical-scroll-proportion="0.0">
+            <state line="14" column="0" selection-start="321" selection-end="321" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -95,17 +98,19 @@
       <file leaf-file-name="Course.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/peterkohli/scoretracker/Course.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="127" column="45" selection-start="3896" selection-end="3896" vertical-scroll-proportion="0.0">
+            <state line="51" column="13" selection-start="1144" selection-end="1144" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Golfer.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Golfer.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/peterkohli/scoretracker/Golfer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="349" selection-end="349" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="21" column="90" selection-start="592" selection-end="592" vertical-scroll-proportion="0.6420863">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -113,8 +118,10 @@
       <file leaf-file-name="Score.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/peterkohli/scoretracker/Score.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="475" selection-end="475" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="12" column="65" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -142,9 +149,11 @@
         <option value="$PROJECT_DIR$/src/Score.java" />
         <option value="$PROJECT_DIR$/src/Course.java" />
         <option value="$PROJECT_DIR$/src/ScoreTracker.java" />
-        <option value="$PROJECT_DIR$/src/com/peterkohli/scoretracker/Course.java" />
-        <option value="$PROJECT_DIR$/src/com/peterkohli/scoretracker/DatabaseObject.java" />
         <option value="$PROJECT_DIR$/src/com/peterkohli/scoretracker/ScoreTracker.java" />
+        <option value="$PROJECT_DIR$/src/com/peterkohli/scoretracker/Golfer.java" />
+        <option value="$PROJECT_DIR$/src/com/peterkohli/scoretracker/Course.java" />
+        <option value="$PROJECT_DIR$/src/com/peterkohli/scoretracker/Score.java" />
+        <option value="$PROJECT_DIR$/src/com/peterkohli/scoretracker/DatabaseObject.java" />
       </list>
     </option>
   </component>
@@ -224,6 +233,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="OverrideImplement.combined" value="true" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
@@ -455,38 +465,42 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/peterkohli/scoretracker/Score.java">
+    <entry file="file://$PROJECT_DIR$/src/com/peterkohli/scoretracker/DatabaseObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="475" selection-end="475" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/peterkohli/scoretracker/Golfer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="349" selection-end="349" vertical-scroll-proportion="0.0">
+        <state line="14" column="0" selection-start="321" selection-end="321" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/peterkohli/scoretracker/Course.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="127" column="45" selection-start="3896" selection-end="3896" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/peterkohli/scoretracker/DatabaseObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="31" selection-start="392" selection-end="392" vertical-scroll-proportion="0.0">
+        <state line="51" column="13" selection-start="1144" selection-end="1144" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/peterkohli/scoretracker/ScoreTracker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="58" selection-start="2188" selection-end="2188" vertical-scroll-proportion="2.1097121">
+        <state line="69" column="58" selection-start="2188" selection-end="2188" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/peterkohli/scoretracker/Score.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="65" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/peterkohli/scoretracker/Golfer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="90" selection-start="592" selection-end="592" vertical-scroll-proportion="0.6420863">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

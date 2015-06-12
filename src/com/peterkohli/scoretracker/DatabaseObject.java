@@ -12,6 +12,7 @@ import java.sql.*;
 public interface DatabaseObject {
     public void write(Connection conn)
             throws SQLException;
+
     public void delete(Connection conn)
             throws SQLException;
 }

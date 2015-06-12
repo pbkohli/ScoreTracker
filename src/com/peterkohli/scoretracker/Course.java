@@ -49,6 +49,7 @@ public class Course implements DatabaseObject {
     }
 
     //method to write a course to sql db
+    @Override
     public void write(Connection conn)
             throws SQLException {
 
@@ -130,6 +131,7 @@ public class Course implements DatabaseObject {
     }
 
     //Delete course and its corresponding holes from DB
+    @Override
     public void delete(Connection conn)
             throws SQLException {
         int courseID = 0;
