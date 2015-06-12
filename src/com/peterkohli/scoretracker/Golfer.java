@@ -1,7 +1,8 @@
 package com.peterkohli.scoretracker;
 
-import java.sql.Connection;
-import java.sql.SQLException;
+import net.sourceforge.jtds.jdbc.DateTime;
+
+import java.sql.*;
 import java.util.Date;
 
 /**
@@ -16,6 +17,13 @@ public class Golfer implements DatabaseObject {
     private String lastName;
     private Date dob;
     private String email;
+
+    public Golfer(String email, String firstName, String lastName, DateTime dob){
+        this.email = email;
+        this.firstName = firstName;
+        this.lastName = lastName;
+
+    }
 
     @Override
     public void write(Connection conn) throws SQLException {

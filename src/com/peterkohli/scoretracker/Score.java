@@ -1,7 +1,6 @@
 package com.peterkohli.scoretracker;
 
-import java.sql.Connection;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.Date;
 
 /**
