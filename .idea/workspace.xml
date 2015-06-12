@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b81bf1f-c9d0-4eae-b4f3-60db4c25fdd7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/peterkohli/scoretracker/Course.java" afterPath="$PROJECT_DIR$/src/com/peterkohli/scoretracker/Course.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/peterkohli/scoretracker/DatabaseObject.java" afterPath="$PROJECT_DIR$/src/com/peterkohli/scoretracker/DatabaseObject.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/peterkohli/scoretracker/Golfer.java" afterPath="$PROJECT_DIR$/src/com/peterkohli/scoretracker/Golfer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/peterkohli/scoretracker/Score.java" afterPath="$PROJECT_DIR$/src/com/peterkohli/scoretracker/Score.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScoreTracker.iml" afterPath="$PROJECT_DIR$/ScoreTracker.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ScoreTracker.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -14,9 +13,10 @@
     <file path="/Course.java" changelist="5b81bf1f-c9d0-4eae-b4f3-60db4c25fdd7" time="1434137496120" ignored="false" />
     <file path="/ScoreTracker.java" changelist="5b81bf1f-c9d0-4eae-b4f3-60db4c25fdd7" time="1434137136471" ignored="false" />
     <file path="/DatabaseObject.java" changelist="5b81bf1f-c9d0-4eae-b4f3-60db4c25fdd7" time="1434137125498" ignored="false" />
-    <file path="/Golfer.java" changelist="5b81bf1f-c9d0-4eae-b4f3-60db4c25fdd7" time="1434137443313" ignored="false" />
+    <file path="/Golfer.java" changelist="5b81bf1f-c9d0-4eae-b4f3-60db4c25fdd7" time="1434138947732" ignored="false" />
     <file path="/Score.java" changelist="5b81bf1f-c9d0-4eae-b4f3-60db4c25fdd7" time="1434137517556" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="5b81bf1f-c9d0-4eae-b4f3-60db4c25fdd7" time="1434137601250" ignored="false" />
+    <file path="/fragment.java" changelist="5b81bf1f-c9d0-4eae-b4f3-60db4c25fdd7" time="1434141264844" ignored="false" />
+    <file path="/CourseTest.java" changelist="5b81bf1f-c9d0-4eae-b4f3-60db4c25fdd7" time="1434142904925" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +80,7 @@
       <file leaf-file-name="ScoreTracker.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/peterkohli/scoretracker/ScoreTracker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="58" selection-start="2188" selection-end="2188" vertical-scroll-proportion="0.0">
+            <state line="18" column="8" selection-start="484" selection-end="524" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -98,16 +98,27 @@
       <file leaf-file-name="Course.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/peterkohli/scoretracker/Course.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="13" selection-start="1144" selection-end="1144" vertical-scroll-proportion="0.0">
+            <state line="11" column="14" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Golfer.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="CourseTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/com/peterkohli/scoretracker/CourseTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="61" selection-start="1288" selection-end="1288" vertical-scroll-proportion="0.8471223">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Golfer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/peterkohli/scoretracker/Golfer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="90" selection-start="592" selection-end="592" vertical-scroll-proportion="0.6420863">
+            <state line="24" column="8" selection-start="617" selection-end="617" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -118,10 +129,8 @@
       <file leaf-file-name="Score.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/peterkohli/scoretracker/Score.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="65" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="2" column="18" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -150,10 +159,11 @@
         <option value="$PROJECT_DIR$/src/Course.java" />
         <option value="$PROJECT_DIR$/src/ScoreTracker.java" />
         <option value="$PROJECT_DIR$/src/com/peterkohli/scoretracker/ScoreTracker.java" />
-        <option value="$PROJECT_DIR$/src/com/peterkohli/scoretracker/Golfer.java" />
         <option value="$PROJECT_DIR$/src/com/peterkohli/scoretracker/Course.java" />
-        <option value="$PROJECT_DIR$/src/com/peterkohli/scoretracker/Score.java" />
         <option value="$PROJECT_DIR$/src/com/peterkohli/scoretracker/DatabaseObject.java" />
+        <option value="$PROJECT_DIR$/src/com/peterkohli/scoretracker/Score.java" />
+        <option value="$PROJECT_DIR$/src/com/peterkohli/scoretracker/Golfer.java" />
+        <option value="$PROJECT_DIR$/test/com/peterkohli/scoretracker/CourseTest.java" />
       </list>
     </option>
   </component>
@@ -218,6 +228,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scoretracker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScoreTracker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScoreTracker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -232,22 +260,35 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="project.structure.proportion" value="0.0" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="C:/cygwin/bin/git.exe" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="dynamic.classpath" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
-  <component name="RunManager" selected="Application.ScoreTracker">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.peterkohli.scoretracker" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.CourseTest">
     <configuration default="false" name="ScoreTracker" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.peterkohli.scoretracker.ScoreTracker" />
       <option name="VM_PARAMETERS" />
@@ -260,6 +301,28 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="ScoreTracker" />
       <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="CourseTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="ScoreTracker" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.peterkohli.scoretracker" />
+      <option name="MAIN_CLASS_NAME" value="com.peterkohli.scoretracker.CourseTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
@@ -352,12 +415,14 @@
       <patterns />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Application.ScoreTracker" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.CourseTest" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.ScoreTracker" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.CourseTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.ScoreTracker" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -465,6 +530,22 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/peterkohli/scoretracker/Score.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="18" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/peterkohli/scoretracker/Golfer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="8" selection-start="617" selection-end="617" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/peterkohli/scoretracker/DatabaseObject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="0" selection-start="321" selection-end="321" vertical-scroll-proportion="0.0">
@@ -472,38 +553,116 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/peterkohli/scoretracker/Course.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="13" selection-start="1144" selection-end="1144" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/peterkohli/scoretracker/ScoreTracker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="58" selection-start="2188" selection-end="2188" vertical-scroll-proportion="0.0">
+        <state line="18" column="8" selection-start="484" selection-end="524" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/peterkohli/scoretracker/Score.java">
+    <entry file="file://$PROJECT_DIR$/src/com/peterkohli/scoretracker/Course.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="65" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0">
+        <state line="11" column="14" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/peterkohli/scoretracker/CourseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="61" selection-start="1288" selection-end="1288" vertical-scroll-proportion="0.8471223">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/peterkohli/scoretracker/Golfer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="90" selection-start="592" selection-end="592" vertical-scroll-proportion="0.6420863">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>ScoreTracker</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>jtds-1.3.1</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
 
