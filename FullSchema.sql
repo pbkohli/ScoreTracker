@@ -58,6 +58,7 @@ ScoreID [int] IDENTITY(1, 1) NOT NULL
 , Penalty bit NULL
 , Sand bit NULL
 , RoundID [int] NOT NULL
+, Drive [varchar](5) NULL
 , Hole int NOT NULL
 , CONSTRAINT [UC_HoleScore_RoundHole] UNIQUE (
 	RoundID
