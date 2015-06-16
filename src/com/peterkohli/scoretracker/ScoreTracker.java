@@ -75,11 +75,41 @@ public class ScoreTracker {
 
         System.out.println(course1.getHolePar(2));
 
+
+        int courseID = 0;
+        try {
+            courseID = course1.getCourseID(conn);
+        } catch (SQLException e){
+            e.printStackTrace();
+        }
+        System.out.println(courseID);
+
+
+        Date dob = new Date(12/17/1990);
+        Golfer golfer1 = new Golfer("pbkohli@gmail.com", "Peter", "Kohli", dob);
+
+        Date datePlayed = new Date(6/15/2015);
+        Score score1 = new Score(golfer1, course1, datePlayed);
+        HoleScore holeScore1 = new HoleScore(score1, 4, 2, false, false, "S", 4);
+
+        try {
+            score1.write(conn);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            holeScore1.write(conn);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
         try {
             course1.delete(conn);
         } catch (SQLException e) {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
         }
+
 
     }
 }

@@ -18,16 +18,39 @@ public class Golfer implements DatabaseObject {
     private Date dob;
     private String email;
 
-    public Golfer(String email, String firstName, String lastName, DateTime dob){
+    public Golfer(String email, String firstName, String lastName, Date dob){
         this.email = email;
         this.firstName = firstName;
         this.lastName = lastName;
+        this.dob = dob;
 
     }
 
     @Override
     public void write(Connection conn) throws SQLException {
-        //To change body of implemented methods use File | Settings | File Templates.
+
+        String Query = "INSERT INTO [dbo].[User] (" +
+                " FirstName," +
+                " LastName," +
+                " Email," +
+                " dob)" +
+                " Values (?, ?, ?, ?)";
+
+        try {
+            //set preparedstatement parameters for writing user
+            PreparedStatement st = conn.prepareStatement(Query);
+            st.setString(1, firstName);
+            st.setString(2, lastName);
+            st.setString(3, email);
+            st.setDate(4, (java.sql.Date) dob);
+
+            st.executeUpdate();
+            st.close();
+
+        } catch (SQLException e) {
+            System.err.println("Failed to write course to database.");
+            System.err.println(e.getMessage());
+        }
     }
 
     @Override

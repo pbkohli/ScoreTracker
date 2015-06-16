@@ -180,6 +180,31 @@ public class Course implements DatabaseObject {
         }
     }
 
+    public int getCourseID(Connection conn)
+            throws SQLException {
+        int courseID = 0;
+
+        String selectQuery = "SELECT CourseID FROM dbo.Course WHERE Name = ? AND State = ? AND Tees = ?";
+        try {
+            PreparedStatement ps = conn.prepareStatement(selectQuery);
+            ps.setString(1, this.name);
+            ps.setString(2, this.state);
+            ps.setString(3, this.tees);
+
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()) {
+                courseID = rs.getInt("CourseID");
+            }
+
+            ps.close();
+            rs.close();
+
+        } catch (SQLException se) {
+            throw se;
+        }
+        return courseID;
+    }
+
 
 
 }
