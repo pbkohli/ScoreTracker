@@ -86,7 +86,7 @@ public class ScoreTracker {
         System.out.println(courseID);
 
 
-        Date dob = java.sql.Date.valueOf("12/17/1990");
+        Date dob = java.sql.Date.valueOf("1990-12-17");
         Golfer golfer1 = new Golfer("pbkohli@gmail.com", "Peter", "Kohli", dob);
 
         Date datePlayed = java.sql.Date.valueOf("2015-06-14");
