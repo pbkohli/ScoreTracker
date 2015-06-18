@@ -17,6 +17,7 @@ public class Golfer implements DatabaseObject {
     private String lastName;
     private Date dob;
     private String email;
+    private long userID;
 
     public Golfer(String email, String firstName, String lastName, Date dob){
         this.email = email;
@@ -48,13 +49,47 @@ public class Golfer implements DatabaseObject {
             st.close();
 
         } catch (SQLException e) {
-            System.err.println("Failed to write course to database.");
+            System.err.println("Failed to write golfer to database.");
             System.err.println(e.getMessage());
         }
     }
 
     @Override
     public void delete(Connection conn) throws SQLException {
-        //To change body of implemented methods use File | Settings | File Templates.
+        String Query = "Delete FROM dbo.[User] WHERE Email = ?";
+        try {
+            PreparedStatement ps = conn.prepareStatement(Query);
+            ps.setString(1, email);
+
+            ps.executeUpdate();
+
+            ps.close();
+        } catch (SQLException se) {
+            throw se;
+        }
+    }
+
+    //return sql userID for a given user
+    public long getUserID(Connection conn)
+            throws SQLException {
+        int userID = 0;
+
+        String selectQuery = "SELECT UserID FROM dbo.[User] WHERE Email = ?";
+        try {
+            PreparedStatement ps = conn.prepareStatement(selectQuery);
+            ps.setString(1, this.email);
+
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()) {
+                userID = rs.getInt("UserID");
+            }
+
+            ps.close();
+            rs.close();
+
+        } catch (SQLException se) {
+            throw se;
+        }
+        return userID;
     }
 }

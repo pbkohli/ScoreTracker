@@ -7,28 +7,29 @@ import java.sql.SQLException;
 /**
  * Created by pbkoh_000 on 6/16/2015.
  */
-public class HoleScore implements DatabaseObject {
+public class HoleScore {
     private int strokes;
     private int toGreen;
     private boolean sand;
     private boolean penalty;
     private String drive;
     private int hole;
-    private Score round;
 
-    public HoleScore(Score round, int strokes, int toGreen, boolean sand, boolean penalty, String drive, int hole){
-        this.round = round;
+
+    public HoleScore(int strokes, int toGreen, boolean sand, boolean penalty, String drive, int hole){
         this.strokes = strokes;
         this.toGreen = toGreen;
         this.sand = sand;
         this.penalty = penalty;
         this.drive = drive;
         this.hole = hole;
+
+
     }
 
 
-    @Override
-    public void write(Connection conn) throws SQLException {
+    //@Override
+    public void write(Connection conn, long roundID) throws SQLException {
 
 
         //To change body of implemented methods use File | Settings | File Templates.
@@ -45,7 +46,7 @@ public class HoleScore implements DatabaseObject {
         try {
             //set preparedstatement parameters for writing single hole score
             PreparedStatement st = conn.prepareStatement(Query);
-            st.setLong(1, round.getRoundID());
+            st.setLong(1, roundID);
             st.setInt(2, strokes);
             st.setInt(3, toGreen);
             st.setBoolean(4, penalty);
@@ -57,14 +58,30 @@ public class HoleScore implements DatabaseObject {
             st.close();
 
         } catch (SQLException e) {
-            System.err.println("Failed to write course to database.");
+            System.err.println("Failed to write hole score to database.");
             System.err.println(e.getMessage());
         }
 
     }
 
-    @Override
-    public void delete(Connection conn) throws SQLException {
-        //To change body of implemented methods use File | Settings | File Templates.
+    //@Override
+    public void delete(Connection conn, long roundID, int holeNumber) throws SQLException {
+        String Query = "Delete FROM HoleScore WHERE RoundID = ? AND Hole = ?";
+        try {
+            PreparedStatement ps = conn.prepareStatement(Query);
+            ps.setLong(1, roundID);
+            ps.setInt(2, holeNumber);
+
+            ps.executeUpdate();
+
+            ps.close();
+        } catch (SQLException se) {
+            throw se;
+        }
+
+    }
+
+    public int getHoleNumber(){
+        return this.hole;
     }
 }

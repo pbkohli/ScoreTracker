@@ -158,7 +158,7 @@ public class Course implements DatabaseObject {
         String deleteHolesQuery = "DELETE FROM dbo.Hole WHERE CourseID = ?";
         try {
             PreparedStatement ps = conn.prepareStatement(deleteHolesQuery);
-            ps.setString(1, Integer.toString(courseID));
+            ps.setInt(1, courseID);
 
             ps.executeUpdate();
 
@@ -170,7 +170,7 @@ public class Course implements DatabaseObject {
         String deleteCourseQuery = "DELETE FROM dbo.Course WHERE CourseID = ?";
         try {
             PreparedStatement ps = conn.prepareStatement(deleteCourseQuery);
-            ps.setString(1, Integer.toString(courseID));
+            ps.setInt(1, courseID);
 
             ps.executeUpdate();
 

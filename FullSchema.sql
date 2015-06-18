@@ -34,7 +34,6 @@ UserID [int] IDENTITY(1, 1) NOT NULL
 , FirstName [varchar] (50) NOT NULL
 , LastName [varchar] (50) NOT NULL
 , Email [varchar] (50) NOT NULL
-, Password [varchar] (250) NOT NULL
 , dob [datetime] NOT NULL
 , CONSTRAINT [UC_User_Email] UNIQUE (
 	Email

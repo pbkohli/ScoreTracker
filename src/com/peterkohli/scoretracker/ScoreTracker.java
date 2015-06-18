@@ -89,25 +89,40 @@ public class ScoreTracker {
         Golfer golfer1 = new Golfer("pbkohli@gmail.com", "Peter", "Kohli", dob);
 
         Date datePlayed = new Date(6/15/2015);
-        Score score1 = new Score(golfer1, course1, datePlayed);
-        HoleScore holeScore1 = new HoleScore(score1, 4, 2, false, false, "S", 4);
+
+        HoleScore holeScore1 = new HoleScore(4, 2, false, false, "S", 1);
+        HoleScore[] holeByHoleScore = {holeScore1};
+        Round round1 = new Round(golfer1, course1, datePlayed, holeByHoleScore);
 
         try {
-            score1.write(conn);
+            golfer1.write(conn);
         } catch (SQLException e) {
             e.printStackTrace();
         }
 
         try {
-            holeScore1.write(conn);
+            round1.write(conn);
         } catch (SQLException e) {
             e.printStackTrace();
         }
+
+        try {
+            round1.delete(conn);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
 
         try {
             course1.delete(conn);
         } catch (SQLException e) {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        }
+
+        try {
+            golfer1.delete(conn);
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
 
 
