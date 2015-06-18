@@ -1,6 +1,7 @@
 package com.peterkohli.scoretracker;
 
 import java.sql.*;
+import java.text.SimpleDateFormat;
 
 /**
  * Created with IntelliJ IDEA.
@@ -54,7 +55,7 @@ public class ScoreTracker {
 
             //Step 2: Establish the connection to the database
             String url = "jdbc:jtds:sqlserver://localhost:1433/ScoreTracker";
-            conn = DriverManager.getConnection(url, "TaxGopherQA", "gotaxgopher");
+            conn = DriverManager.getConnection(url, "sa", "gotaxgopher");
         } catch (Exception e) {
             System.err.println("Failed to connect to DB.");
             System.err.println(e.getMessage());
@@ -85,10 +86,11 @@ public class ScoreTracker {
         System.out.println(courseID);
 
 
-        Date dob = new Date(12/17/1990);
+        Date dob = java.sql.Date.valueOf("12/17/1990");
         Golfer golfer1 = new Golfer("pbkohli@gmail.com", "Peter", "Kohli", dob);
 
-        Date datePlayed = new Date(6/15/2015);
+        Date datePlayed = java.sql.Date.valueOf("2015-06-14");
+
 
         HoleScore holeScore1 = new HoleScore(4, 2, false, false, "S", 1);
         HoleScore[] holeByHoleScore = {holeScore1};
