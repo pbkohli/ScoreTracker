@@ -92,8 +92,44 @@ public class ScoreTracker {
         Date datePlayed = java.sql.Date.valueOf("2015-06-14");
 
 
-        HoleScore holeScore1 = new HoleScore(4, 2, false, false, "S", 1);
-        HoleScore[] holeByHoleScore = {holeScore1};
+        HoleScore holeScore1 = new HoleScore(6, 3, false, false, "L", 1);
+        HoleScore holeScore2 = new HoleScore(4, 2, false, false, "", 2);
+        HoleScore holeScore3 = new HoleScore(8, 6, false, true, "L", 3);
+        HoleScore holeScore4 = new HoleScore(5, 2, false, false, "R", 4);
+        HoleScore holeScore5 = new HoleScore(5, 3, true, false, "R", 5);
+        HoleScore holeScore6 = new HoleScore(4, 1, false, false, "", 6);
+        HoleScore holeScore7 = new HoleScore(6, 3, false, false, "S", 7);
+        HoleScore holeScore8 = new HoleScore(6, 3, false, false, "R", 8);
+        HoleScore holeScore9 = new HoleScore(6, 3, false, false, "", 9);
+        HoleScore holeScore10 = new HoleScore(4, 3, false, false, "R", 10);
+        HoleScore holeScore11 = new HoleScore(6, 4, false, true, "R", 11);
+        HoleScore holeScore12 = new HoleScore(7, 5, true, false, "R", 12);
+        HoleScore holeScore13 = new HoleScore(6, 3, false, false, "L", 13);
+        HoleScore holeScore14 = new HoleScore(6, 3, false, false, "R", 14);
+        HoleScore holeScore15 = new HoleScore(4, 2, false, false, "S", 15);
+        HoleScore holeScore16 = new HoleScore(4, 2, true, false, "", 16);
+        HoleScore holeScore17 = new HoleScore(6, 4, false, false, "R", 17);
+        HoleScore holeScore18 = new HoleScore(4, 3, false, false, "R", 18);
+
+        HoleScore[] holeByHoleScore = {holeScore1
+        , holeScore2
+        , holeScore3
+        , holeScore4
+        , holeScore5
+        , holeScore6
+        , holeScore7
+        , holeScore8
+        , holeScore9
+        , holeScore10
+        , holeScore11
+        , holeScore12
+        , holeScore13
+        , holeScore14
+        , holeScore15
+        , holeScore16
+        , holeScore17
+        , holeScore18};
+
         Round round1 = new Round(golfer1, course1, datePlayed, holeByHoleScore);
 
         try {
@@ -107,7 +143,7 @@ public class ScoreTracker {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
+/*
         try {
             round1.delete(conn);
         } catch (SQLException e) {
@@ -126,7 +162,7 @@ public class ScoreTracker {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
+*/
 
     }
 }
