@@ -84,4 +84,8 @@ public class HoleScore {
     public int getHoleNumber(){
         return this.hole;
     }
+
+    public int getScore() { return this.strokes;}
+
+    public String getDrive() { return this.drive;}
 }

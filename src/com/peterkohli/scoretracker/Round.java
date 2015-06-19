@@ -85,4 +85,26 @@ public class Round implements DatabaseObject {
         return this.roundID;
     }
 
+    public int getScore() {
+        int score = 0;
+        for (int i = 0; i < holeByHoleScore.length; i++){
+        score = score + holeByHoleScore[i].getScore();
+        }
+        return score;
+    }
+
+    public int[] getDrives() {
+        int drives[] = {0, 0, 0};
+        for (int i = 0; i < holeByHoleScore.length; i++) {
+            if (holeByHoleScore[i].getDrive() == "L") {
+                drives[0] = drives[0] + 1;
+            } else if (holeByHoleScore[i].getDrive() == "S") {
+                drives[1] = drives[1] + 1;
+            } else if (holeByHoleScore[i].getDrive() == "R") {
+                drives[2] = drives[2] + 1;
+            }
+        }
+        return drives;
+    }
+
 }

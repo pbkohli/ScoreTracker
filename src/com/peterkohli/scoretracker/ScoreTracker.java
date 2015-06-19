@@ -61,6 +61,7 @@ public class ScoreTracker {
             System.err.println(e.getMessage());
         }
 
+
         try {
             course1.write(conn);
         } catch (SQLException e) {
@@ -143,7 +144,35 @@ public class ScoreTracker {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-/*
+
+        System.out.println(round1.getScore());
+
+        StringBuilder sb = new StringBuilder("You hit ");
+        sb.append(round1.getDrives()[1]);
+        sb.append(" out of ");
+        sb.append(round1.getDrives()[0] + round1.getDrives()[1] + round1.getDrives()[2]);
+        sb.append(" drives in the fairway.");
+
+        System.out.println(sb);
+
+        StringBuilder sb1 = new StringBuilder("You missed ");
+        sb1.append(round1.getDrives()[0]);
+        sb1.append(" out of ");
+        sb1.append(round1.getDrives()[0] + round1.getDrives()[1] + round1.getDrives()[2]);
+        sb1.append(" drives to the right.");
+
+        System.out.println(sb1);
+
+        StringBuilder sb2 = new StringBuilder("You missed ");
+        sb2.append(round1.getDrives()[2]);
+        sb2.append(" out of ");
+        sb2.append(round1.getDrives()[0] + round1.getDrives()[1] + round1.getDrives()[2]);
+        sb2.append(" drives to the left.");
+
+        System.out.println(sb2);
+
+
+
         try {
             round1.delete(conn);
         } catch (SQLException e) {
@@ -162,7 +191,7 @@ public class ScoreTracker {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-*/
+
 
     }
 }
