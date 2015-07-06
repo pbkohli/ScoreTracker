@@ -88,4 +88,11 @@ public class HoleScore {
     public int getScore() { return this.strokes;}
 
     public String getDrive() { return this.drive;}
+
+    public boolean getSand() { return this.sand; }
+
+    public boolean getPenalty() { return this.penalty; }
+
+    public int getToGreen() { return this.toGreen; }
+
 }

@@ -44,6 +44,8 @@ public class Course implements DatabaseObject {
         return holes[hole - 1][1];
     }
 
+    public double getRating() { return rating; }
+
     public double getSlope() {
         return slope;
     }

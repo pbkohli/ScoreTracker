@@ -171,7 +171,7 @@ public class ScoreTracker {
 
         System.out.println(sb2);
 
-
+        System.out.println(round1.getHandicapDifferential());
 
         try {
             round1.delete(conn);

@@ -107,4 +107,28 @@ public class Round implements DatabaseObject {
         return drives;
     }
 
+    private HoleScore[] getAdjustedRound(){
+        HoleScore[] adjustedHoleScores = new HoleScore[holeByHoleScore.length];
+        for (int i = 0; i < holeByHoleScore.length; i++){
+            if(holeByHoleScore[i].getScore() <= 7){
+                adjustedHoleScores[i] = holeByHoleScore[i];
+            } else {
+                adjustedHoleScores[i] = new HoleScore(7, holeByHoleScore[i].getToGreen(), holeByHoleScore[i].getSand(), holeByHoleScore[i].getPenalty(), holeByHoleScore[i].getDrive(), holeByHoleScore[i].getHoleNumber());
+            }
+        }
+        return adjustedHoleScores;
+    }
+
+    public double getHandicapDifferential(){
+        HoleScore[] adjustedScore = this.getAdjustedRound();
+        int adjustedStrokes = 0;
+
+        for (int i = 0; i < adjustedScore.length; i++){
+            adjustedStrokes = adjustedStrokes + adjustedScore[i].getScore();
+        }
+        return (adjustedStrokes - golfCourse.getRating()) * 113 / golfCourse.getSlope();
+
+
+    }
+
 }
